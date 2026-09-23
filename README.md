@@ -56,6 +56,7 @@ Retrieves all customer orders along with customer names and cities.
 SELECT o.order_id, c.customer_name, c.city, o.order_date 
 FROM orders o 
 INNER JOIN customers c ON o.customer_id = c.customer_id;
+![Q1 Result](screenshots/joins/01_screenshot.png)
 
 ### Query 2: Multi-Table JOIN (Order Details & Product Info)
 Joins order_items with products to display itemized order lines with product pricing and categories
